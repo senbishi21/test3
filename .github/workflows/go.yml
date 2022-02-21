@@ -23,3 +23,11 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v1
+      with:
+        languages: go, javascript
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v1
