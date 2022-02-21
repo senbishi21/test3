@@ -15,7 +15,6 @@ func testAPIHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	_init()
 	http.HandleFunc("/test", testAPIHandler)
 	http.ListenAndServe(":8080", nil)
 }
