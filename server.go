@@ -2,17 +2,7 @@ package main
 
 import (
 	"fmt"
-	"bytes"
-	"io"
-	"log"
 	"net/http"
-	"os"
-	"crypto/aes"
-	"crypto/cipher"
-	"crypto/rand"
-	"encoding/base64"
-	"encoding/hex"
-	"golang.org/x/crypto/bcrypt"
 )
 
 
